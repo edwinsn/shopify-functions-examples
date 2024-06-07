@@ -4,7 +4,7 @@
 * Ensuring the necessary permissions are in place.
 * Step-by-Step Guide
 
-Links:
+Links to documentation:  
   Function result: https://shopify.dev/docs/api/functions/reference/product-discounts/graphql/functionresult
   Function Input: https://shopify.dev/docs/api/functions/reference/product-discounts/graphql/input
 
