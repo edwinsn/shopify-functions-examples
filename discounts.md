@@ -90,7 +90,7 @@ Deploy your discount function to Shopify.
 
 6. Activate the discount using the graphql app
 
- ` # query {
+ ``` # query {
   #   shopifyFunctions(first:25){
   #     nodes{
   #     	id
@@ -117,4 +117,4 @@ Deploy your discount function to Shopify.
         message
       }
     }
-  }`
+  }```
