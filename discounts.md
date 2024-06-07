@@ -90,31 +90,31 @@ Deploy your discount function to Shopify.
 
 6. Activate the discount using the graphql app
 
-# query {
-#   shopifyFunctions(first:25){
-#     nodes{
-#     	id
-#     	app {
-#         title
-#       }
-#     apiType
-#     title
-#   	}
-#   }
-# }
-# cadf722f-92f5-49a8-b05e-647d0898be07
-mutation {
-  discountAutomaticAppCreate(automaticAppDiscount:{
-    title: "No recharge subscription Discount"
-    functionId: "cadf722f-92f5-49a8-b05e-647d0898be07"
-    startsAt: "2024-03-28T00:00:00"
-  }) {
-    automaticAppDiscount {
-      discountId
+ ` # query {
+  #   shopifyFunctions(first:25){
+  #     nodes{
+  #     	id
+  #     	app {
+  #         title
+  #       }
+  #     apiType
+  #     title
+  #   	}
+  #   }
+  # }
+  # cadf722f-92f5-49a8-b05e-647d0898be07
+  mutation {
+    discountAutomaticAppCreate(automaticAppDiscount:{
+      title: "No recharge subscription Discount"
+      functionId: "cadf722f-92f5-49a8-b05e-647d0898be07"
+      startsAt: "2024-03-28T00:00:00"
+    }) {
+      automaticAppDiscount {
+        discountId
+      }
+      userErrors {
+        field
+        message
+      }
     }
-    userErrors {
-      field
-      message
-    }
-  }
-}
+  }`
